@@ -30,8 +30,8 @@ document.querySelectorAll('.action').forEach(button => {
             if (selectedElements) selectedElements.classList.remove('selected');
             e.currentTarget.classList.add('selected');
             document.body.classList.remove('victory', 'draw', 'defeat');
-            cpuChoiceIMG.setAttribute('src', 'src/assets/images/cpu/rock.png');
-            playerChoiceIMG.setAttribute('src', 'src/assets/images/player/rock.png');
+            cpuChoiceIMG.setAttribute('src', 'src/assets/images/cpu/rock.webp');
+            playerChoiceIMG.setAttribute('src', 'src/assets/images/player/rock.webp');
 
             // set a player choice
             playerChoice = e.currentTarget.id;
@@ -63,8 +63,8 @@ function startTimer() {
             updateScore(getResult(playerChoice, cpuChoice), playerChoice, cpuChoice);
 
             // SET CHOICEs IMAGEs
-            cpuChoiceIMG.setAttribute('src', `src/assets/images/cpu/${cpuChoice}.png`);
-            playerChoiceIMG.setAttribute('src', `src/assets/images/player/${playerChoice}.png`);
+            cpuChoiceIMG.setAttribute('src', `src/assets/images/cpu/${cpuChoice}.webp`);
+            playerChoiceIMG.setAttribute('src', `src/assets/images/player/${playerChoice}.webp`);
         }
     }, 1000);
 }
