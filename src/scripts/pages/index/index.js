@@ -86,11 +86,11 @@ function getResult(playerChoice, cpuChoice){
     const rules = {
         rock: 'scissors',
         paper: 'rock',
-        scissors: 'rock',
+        scissors: 'paper',
     }
 
     if (playerChoice === cpuChoice) return 'draw';
-    return (rules[playerChoice]) === cpuChoice ? 'win' : 'defeat';
+    return (rules[playerChoice] === cpuChoice)  ? 'win' : 'defeat';
 }
 
 function updateScore(state, playerChoice, cpuChoice){
