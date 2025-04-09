@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+header button {
+    background-color: var(--button);
+    border: 0;
+    border-radius: 5px;
+    padding: .8em;
+}
+
+header button:hover {
+    background-color: var(--buttonHover);
+}
+
+button span {
+    color: var(--text);
+}
+
+#scoreboards p {
+    color: var(--text);
+    font-size: 1.2em;
+}
+
+#scoreboards span {
+    color: var(--emphasis);
+}

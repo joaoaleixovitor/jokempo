@@ -1,0 +1,6 @@
+@import url(../../global.css);
+
+@import url(partials/header.css);
+@import url(partials/game.css);
+@import url(partials/output.css);
+@import url(partials/actions.css);

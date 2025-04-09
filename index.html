@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Papel Tesoura</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="src/styles/pages/index/index.css">
+    <script src="src/scripts/pages/index/index.js" defer></script>
+</head>
+<body>
+    <div id="game">
+        <header>
+            <div id="scoreboards">
+                <p>Vitórias: <span id="wins">0</span></p>
+                <p>Empates: <span id="draws">0</span></p>
+                <p>Derrotas: <span id="defeats">0</span></p>
+            </div>
+            <button><span class="material-symbols-outlined">menu</span></button>
+        </header>
+        <div id="choices">
+            <div id="cpuChoice" class="choice">
+                <p>ChatGPT</p>
+                <div>
+                    <img id="cpuChoiceImg" src="src/assets/images/cpu/rock.png" alt="CPU Choice">
+                </div>
+            </div>
+            <p id="timer">3</p>
+            <div id="playerChoice" class="choice">
+                <p>Você</p>
+                <div>
+                    <img id="playerChoiceImg" src="src/assets/images/player/rock.png" alt="Player Choice">
+                </div>
+            </div>
+        </div>
+        <div id="output">
+            <span>Após selecionar uma opção a baixo, o jogo é iniciado.</span>
+        </div>
+        <div id="actions">
+            <div id="rock" class="action"><img src="src/assets/images/player/rock.png" alt="rock"></div>
+            <div id="paper" class="action"><img src="src/assets/images/player/paper.png" alt="paper"></div>
+            <div id="scissors" class="action"><img src="src/assets/images/player/scissors.png" alt="scissors"></div>
+        </div>
+    </div>
+</body>
+</html>
